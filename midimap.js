@@ -19,11 +19,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-function midi() {
+function midimap() {
   // private vars
+  var mappings = {};
   var lookup = {};
   var mapId = null;
-  var mappings = {};
 
   // private methods
   // must be called each time a mapping is assigned
@@ -35,17 +35,17 @@ function midi() {
 
   navigator.requestMIDIAccess(function(midiAccess) {
     console.log("MIDI ready!");
-    var m = midiAccess;
+    var midi = midiAccess;
 
     // find and print all inputs
-    var inputs = m.getInputs();
+    var inputs = midi.getInputs();
     console.log(inputs.length + " inputs:");
     for (var i = 0; i < inputs.length; i++)
       console.log(i + ": " + inputs[i]);
 
     // just attach the first input
     if (inputs.length > 0) {
-      m.getInput(inputs[0]).addEventListener("message", function(e) {
+      midi.getInput(inputs[0]).addEventListener("message", function(e) {
         var control = e.data[1];
 
         if (mapId) {
