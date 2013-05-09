@@ -30,7 +30,7 @@ var korgNanoKontrol = {
 };
 m.map(korgNanoKontrol);
 ```
-to view current mappings use:
+to view the current mappings object (useful for saving the mappings) use:
 ```javascript
 m.mappings();
 ```
