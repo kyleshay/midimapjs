@@ -10,7 +10,7 @@ the following shim is required before usage:
 
 basic usage is as follows:
 ```javascript
-m = new midi();
+m = new midimap();
 ```
 you may assign values to be mapped via midi to a unique id by using:
 ```javascript
