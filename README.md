@@ -20,7 +20,7 @@ m.add("xxxx"); // where xxxx is any valid value (string or numerical)
 ```
 you can get the value for any assigned value by using:
 ```javascript
-m.get("xxxx");
+m.get("xxxx"); // returns the value between 0 - 100, not 0 - 127
 ```
 you may also preload configured mappings by doing the following:
 ```javascript
