@@ -16,6 +16,7 @@ you may assign values to be mapped via midi to a unique id by using:
 ```javascript
 m.add("xxxx"); // where xxxx is any valid value (string or numerical)
 ```
+*after the add function is called, wiggle the physical midi control to map it to that id*
 you can get the value for any assigned value by using:
 ```javascript
 m.get("xxxx");
