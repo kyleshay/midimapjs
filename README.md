@@ -14,7 +14,7 @@ m = new midi();
 ```
 you may assign values to be mapped via midi to a unique id by using:
 ```javascript
-m.map("xxxx"); // where xxxx is any valid value (string or numerical)
+m.add("xxxx"); // where xxxx is any valid value (string or numerical)
 ```
 you can get the value for any assigned value by using:
 ```javascript
@@ -26,7 +26,7 @@ var korgNanoKontrol = {
   2:{id:"slider-1",value:0},
   14:{id:"knob-1",value:0},
 };
-m.assign(korgNanoKontrol);
+m.map(korgNanoKontrol);
 ```
 to view current mappings use:
 ```javascript
