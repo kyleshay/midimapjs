@@ -1,0 +1,20 @@
+var korgNanoKontrol = {
+   2:{id:"slider-1",value:0},
+   3:{id:"slider-2",value:0},
+   4:{id:"slider-3",value:0},
+   5:{id:"slider-4",value:0},
+   6:{id:"slider-5",value:0},
+   8:{id:"slider-6",value:0},
+   9:{id:"slider-7",value:0},
+   12:{id:"slider-8",value:0},
+   13:{id:"slider-9",value:0},
+   14:{id:"knob-1",value:0},
+   15:{id:"knob-2",value:0},
+   16:{id:"knob-3",value:0},
+   17:{id:"knob-4",value:0},
+   18:{id:"knob-5",value:0},
+   19:{id:"knob-6",value:0},
+   20:{id:"knob-7",value:0},
+   21:{id:"knob-8",value:0},
+   22:{id:"knob-9",value:0}
+};
