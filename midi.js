@@ -78,6 +78,6 @@ function midi() {
     return mappings;
   }
   this.reset = function() {
-    mappings = lookup = {};
+    mappings = {}, lookup = {};
   }
 }
