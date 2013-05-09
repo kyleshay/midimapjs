@@ -23,8 +23,8 @@ m.get("xxxx");
 you may also preload configured mappings by doing the following:
 ```javascript
 var korgNanoKontrol = {
-  2:{id:"slider-1",value:0},
-  14:{id:"knob-1",value:0},
+  2:{id:"slider-1",value:0}, // id 2 is the first slider, I called it "slider-1"
+  14:{id:"knob-1",value:0}, // id 14 is the first knob, I called it "knob-1"
 };
 m.map(korgNanoKontrol);
 ```
