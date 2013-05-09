@@ -64,14 +64,20 @@ function midi() {
   });
 
   // privileged methods
-  this.doMap = function(id) {
+  this.map = function(id) {
     mapId = id;
   }
-  this.getValue = function(id) {
+  this.get = function(id) {
     return lookup[id].value;
   }
   this.assign = function(m) {
     mappings = m;
     regenLookupMap();
+  }
+  this.mappings = function() {
+    return mappings;
+  }
+  this.reset = function() {
+    mappings = lookup = {};
   }
 }
