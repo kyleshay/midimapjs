@@ -68,7 +68,7 @@ function midi() {
     mapId = id;
   }
   this.get = function(id) {
-  	if(!lookup[id]) return 0;
+    if(!lookup[id]) return 0;
     return lookup[id].value || 0;
   }
   this.map = function(m) {
